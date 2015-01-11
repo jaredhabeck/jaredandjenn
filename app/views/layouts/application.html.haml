@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %title Jared and Jenn
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Arvo'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?v=3.exp'
+    = csrf_meta_tags
+  %body
+    .container-fluid
+      .row.header
+        = image_tag 'header-bg.jpg'
+      #nav
+        .navbar
+          .container-fluid
+            .navbar-inner
+              %ul.nav.navbar-nav
+                %li
+                  %a{:href => "#details"} DETAILS
+                %li
+                  %a{:href => "#about-us"} ABOUT US
+      #main
+        = yield

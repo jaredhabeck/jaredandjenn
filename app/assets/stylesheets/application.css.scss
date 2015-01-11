@@ -1,0 +1,158 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "compass";
+@import "colors";
+
+body {
+  background-image: -webkit-gradient(
+                     linear,
+                     left bottom,
+                     right bottom,
+                     color-stop(0, #BABABA),
+                     color-stop(0.5, #F5F5F5),
+                     color-stop(1, #BABABA)
+                   );
+  background-image: -o-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+  background-image: -moz-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+  background-image: -webkit-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+  background-image: -ms-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+  background-image: linear-gradient(to right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+}
+
+p {
+  font-size: 16px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: $blue;
+  text-align: center;
+}
+
+.navbar .nav {
+  float: none;
+  text-align: center;
+  background-color: rgb(143, 143, 143);
+  background-color: rgba(143, 143, 143, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8F8F8F, endColorstr=#8F8F8F);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8F8F8F, endColorstr=#8F8F8F);
+}
+
+.navbar .nav a {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.navbar .nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar .nav > li > a:hover {
+  color: $blue;
+  background-color: #F5F5F5 !important;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:10;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+@media (max-width: 797px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.row.header img {
+  width: 100%;
+  max-height: 450px;
+}
+
+#main {
+  .col-md-6 {
+  }
+}
+
+#main-inner {
+  padding: 30px;
+  border-left: 10px solid $blue;
+  border-right: 10px solid $blue;
+  border-bottom: 10px solid $blue;
+}
+
+.nav-container {
+  font-size: 18px;
+  margin: 0 0 -24px 0;
+  .left-cap {
+    float: left;
+    background: image-url('border_center.png') repeat-x 0 3px;
+    height: 38px;
+    width: 25%;
+  }
+  .text-center {
+    float: left;
+    width: 50%;
+  }
+  .right-cap {
+    float: left;
+    background: image-url('border_center.png') repeat-x 0 3px;
+    height: 38px;
+    width: 25%;
+  }
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+#reception-map {
+  height: 200px;
+}
+
+.beringer {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 180px;
+  max-width: 180px;
+}
+
+@media (max-width: 797px) {
+  .beringer {
+    display: none;
+  }
+}
+
+.container.first {
+  margin-bottom: 20px;
+}

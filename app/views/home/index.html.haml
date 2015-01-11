@@ -1,0 +1,72 @@
+.container.first
+  #details.row
+    .col-md-10.col-centered
+      .row
+        .col-md-6.col-sm-6.col-
+          %h2 RECEPTION
+          %p
+            The reception will take place at Beringer Vineyards,
+            in St. Helena. A valet service will be provided.
+          .row
+            .col-md-6
+              = image_tag 'beringer.png', :class => 'beringer'
+            .col-md-6
+              %div{:style => 'height:100%; width: 100%;'}
+                #reception-map
+        .col-md-6
+          %h2 CEREMONY
+          %p
+            The ceremony location is yet to be determined,
+            but will take place within the greater Napa area.
+.container
+  #about-us.row
+    .col-md-10.col-centered
+      %h2 ABOUT US
+      .row
+        .col-md-6
+          %h4 HIM
+          %p
+            Jared, an Atlanta Native, is a web developer with
+            a healthy lust for the outdoors. He breaks up long programming
+            stints with regular bouts of rock climbing and mountain biking.
+          STUFF
+        .col-md-6
+          %h4 HER
+          %p
+            Jenn traveled all the way from Wine Country in Napa Valley to
+            obtain her master's degree at Emory. She is currently a data
+            analyst at the CDC. She is a long distance runner,
+            and completed her first 50k ultra run in 2014.
+      .row
+        .col-md-12
+          %h4 THEM
+          %p
+            Jared and Jenn met at the birthday party of his best friend
+            and best man, Chris. They struck up conversation centered on
+            rock climbing, and as Jenn showed interest in the sport, Jared
+            hastily invited her on a first date at the local gym.
+      .row
+        #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0"}
+            %li{"data-slide-to" => "1"}
+            %li{"data-slide-to" => "2"}
+            %li{"data-slide-to" => "3"}
+          / Wrapper for slides
+          .carousel-inner{:role => "listbox"}
+            .item.active
+              = image_tag 'jared_and_jenn.jpg', :class => 'img-responsive'
+            .item
+              = image_tag 'edited1.jpg', :class => 'img-responsive'
+            .item
+              = image_tag 'edited3.jpg', :class => 'img-responsive'
+            .item
+              = image_tag 'edited4.jpg', :class => 'img-responsive'
+          / Controls
+          %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+            %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+            %span.sr-only Previous
+          %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+            %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+            %span.sr-only Next
