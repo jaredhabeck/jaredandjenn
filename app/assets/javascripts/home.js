@@ -46,5 +46,11 @@ $(document).ready(function() {
   });
 
   google.maps.event.addDomListener(window, 'load', initialize);
+
+  var $myGroup = $('.hotel-group');
+  $myGroup.on('show','.collapse', function() {
+    console.log('showing');
+    $myGroup.find('.collapse.in').collapse('hide');
+  });
 });
 

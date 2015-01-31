@@ -1,9 +1,10 @@
 .container.first
   #details.row
+    %h2.text-center DETAILS
     .col-md-10.col-centered
       .row
-        .col-md-6
-          %h2 RECEPTION
+        .col-md-6.divider.padded
+          %h3 RECEPTION
           %p
             The reception will take place at Beringer Vineyards,
             in St. Helena. A valet service will be provided.
@@ -13,60 +14,159 @@
             .col-md-6
               %div{:style => 'height:100%; width: 100%;'}
                 #reception-map
-        .col-md-6
-          %h2 CEREMONY
+        .col-md-6.padded
+          %h3 CEREMONY
           %p
             The ceremony location is yet to be determined,
             but will take place within the greater Napa area.
 .container
-  #about-us.row
+  #hotels.row
+    %h2.text-center HOTELS
     .col-md-10.col-centered
-      %h2 ABOUT US
       .row
-        .col-md-6
-          %h4 HIM
+        .col-md-12.padded.top-15
+          %p.note.text-center Hotels in Napa Valley sadly require a two day reservation in all cases, please make your reservations early!
+          %p.text-center Select a price range for listings.
+          #hotel-group.text-center.col-md-6.col-centered
+            .panel
+              %button.btn.btn-default{"data-target" => "#hotel-collapse-1", "data-toggle" => "collapse", "data-parent" => '#hotel-group', :type => "button"}
+                $
+              %button.btn.btn-default{"data-target" => "#hotel-collapse-2", "data-toggle" => "collapse", "data-parent" => '#hotel-group', :type => "button"}
+                $$
+              %button.btn.btn-default{"data-target" => "#hotel-collapse-3", "data-toggle" => "collapse", "data-parent" => '#hotel-group', :type => "button"}
+                $$$
+              #hotel-collapse-1.collapse
+                %h4 Napa:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Hawthorne Suites', 'http://www.napavalleyinns.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Best Western Elm House', 'http://bestwesterncalifornia.com/hotels/best-western-plus-elm-house-inn', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Best Western Inn at the Vines', 'http://www.innatthevines.com/', :target => '_blank'
+
+                %h4 Calistoga:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Comfort Inn Calistoga', 'http://www.comfortinncalistoga.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Mt View Hotel', 'http://mountviewhotel.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'The Sunburst Calistoga', 'http://www.thesunburstcalistoga.com/', :target => '_blank'
+              #hotel-collapse-2.collapse
+                %h4 Napa:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Hilton Garden Inn', 'http://www.napahiltongardeninn.com/', :target => '_blank'
+
+                %h4 St. Helena:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Spanish Villa Inn', 'http://www.napavalleyspanishvilla.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Zinfandel Inn', 'http://www.zinfandelinn.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Shady Oaks Country Inn', 'http://www.shadyoaksinn.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Wydown Hotel', 'http://www.wydownhotel.com/', :target => '_blank'
+
+                %h4 Calistoga:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Best Western Stevenson Manor Hotel', 'http://www.stevensonmanor.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Roman Spa Hot Springs', 'http://www.romanspahotsprings.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Indian Spring Calistoga', 'https://www.indianspringscalistoga.com/', :target => '_blank'
+              #hotel-collapse-3.collapse
+                %h4 Napa:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Embassy Suites', 'http://embassysuites3.hilton.com/en/index.html', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Meritage', 'http://meritageresort.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Napa River Inn', 'http://www.napariverinn.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Silverado Resort and Spa', 'https://www.silveradoresort.com/', :target => '_blank'
+
+                %h4 Yountville:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Napa Valley Lodge', 'http://www.napavalleylodge.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Vintage Inn', 'http://www.vintageinn.com/', :target => '_blank'
+
+                %h4 St. Helena
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Harvest Inn', 'http://www.harvestinn.com/', :target => '_blank'
+                  %li.list-group-item
+                    = link_to 'Wine Country Inn', 'http://www.winecountryinn.com/', :target => '_blank'
+
+                %h4 Calistoga:
+                %ul.list-group
+                  %li.list-group-item
+                    = link_to 'Solage', 'http://www.solagecalistoga.com/', :target => '_blank'
+
+.container
+  #registry.row
+    %h2.text-center REGISTRY
+    .col-md-10.col-centered
+      .row
+        %h4.text-center REGISTRY WILL BE READY FEB. 10, 2015
+.container
+  #about-us.row
+    %h2.text-center ABOUT US
+    .col-md-10.col-centered
+      .row
+        .col-md-6.divider.padded
+          %h3 HIM
           %p
             Jared, an Atlanta Native, is a web developer with
             a healthy lust for the outdoors. He breaks up long programming
             stints with regular bouts of rock climbing and mountain biking.
-          STUFF
-        .col-md-6
-          %h4 HER
+          %p.filler
+        .col-md-6.padded
+          %h3 HER
           %p
             Jenn traveled all the way from Wine Country in Napa Valley to
             obtain her master's degree at Emory. She is currently a data
             analyst at the CDC. She is a long distance runner,
             and completed her first 50k ultra run in 2014.
+    .col-md-10.col-centered.top-15
       .row
-        .col-md-12
-          %h4 THEM
+        .col-md-12.padded
+          %h3 THEM
           %p
             Jared and Jenn met at the birthday party of his best friend
             and best man, Chris. They struck up conversation centered on
             rock climbing, and as Jenn showed interest in the sport, Jared
             hastily invited her on a first date at the local gym.
+    .col-md-10.col-centered.top-15.no-bg
       .row
-        #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
-          / Indicators
-          %ol.carousel-indicators
-            %li.active{"data-slide-to" => "0"}
-            %li{"data-slide-to" => "1"}
-            %li{"data-slide-to" => "2"}
-            %li{"data-slide-to" => "3"}
-          / Wrapper for slides
-          .carousel-inner{:role => "listbox"}
-            .item.active
-              = image_tag 'jared_and_jenn.jpg', :class => 'img-responsive'
-            .item
-              = image_tag 'edited1.jpg', :class => 'img-responsive'
-            .item
-              = image_tag 'edited3.jpg', :class => 'img-responsive'
-            .item
-              = image_tag 'edited4.jpg', :class => 'img-responsive'
-          / Controls
-          %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
-            %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
-            %span.sr-only Previous
-          %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
-            %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
-            %span.sr-only Next
+        .col-md-12.no-padding
+          #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+            / Indicators
+            %ol.carousel-indicators
+              %li.active{"data-slide-to" => "0"}
+              %li{"data-slide-to" => "1"}
+              %li{"data-slide-to" => "2"}
+              %li{"data-slide-to" => "3"}
+            / Wrapper for slides
+            .carousel-inner{:role => "listbox"}
+              .item.active
+                = image_tag 'jared_and_jenn.jpg', :class => 'img-responsive'
+              .item
+                = image_tag 'edited1.jpg', :class => 'img-responsive'
+              .item
+                = image_tag 'edited3.jpg', :class => 'img-responsive'
+              .item
+                = image_tag 'edited4.jpg', :class => 'img-responsive'
+            / Controls
+            %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+              %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+              %span.sr-only Previous
+            %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+              %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+              %span.sr-only Next

@@ -32,6 +32,37 @@ body {
   background-image: -webkit-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
   background-image: -ms-linear-gradient(right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
   background-image: linear-gradient(to right, #BABABA 0%, #F5F5F5 50%, #BABABA 100%);
+  .container-fluid {
+    padding-bottom: 30px;
+  }
+}
+
+.panel {
+  margin-bottom: 0px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  button {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .list-group-item a {
+    font-weight: bold;
+  }
+}
+
+.top-15 {
+  margin-top: 15px !important;
+}
+
+p.filler {
+  margin-bottom: 32px;
+}
+
+p.note {
+  font-weight: bold;
 }
 
 p {
@@ -155,4 +186,38 @@ h1, h2, h3, h4, h5 {
 
 .container.first {
   margin-bottom: 20px;
+  margin-top: -40px;
+}
+
+.col-centered {
+  background: #FFF;
+}
+
+.col-centered.no-bg {
+  background: none;
+}
+
+.divider {
+  padding-right: 20px;
+  border-right: 20px solid #F5F5F5;
+}
+
+.padded {
+  padding-bottom: 15px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@media (max-width:767px) {
+  .divider {
+    border-right: none;
+  }
+}
+
+@media (max-width:990px) {
+  .divider {
+    border-right: none;
+  }
 }
