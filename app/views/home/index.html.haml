@@ -114,10 +114,23 @@
     %h2.text-center REGISTRY
     .col-md-10.col-centered
       .row
-        %h4.text-center REGISTRY WILL BE READY FEB. 10, 2015
+        %p.note.top-15.text-center Click on the stores below to view registries.
+        .row
+          .col-md-4
+            .thumbnail-container
+              %a.thumbnail{:href => 'http://www.crateandbarrel.com/Gift-Registry/jennifer-whitmill-and-jared-habeck/r5281050'}
+                = image_tag 'crate-barrel-logo.jpg', :class => 'img-responsive'
+          .col-md-4
+            .thumbnail-container
+              %a.thumbnail{:href => 'http://www.amazon.com/registry/wedding/1ZAAKLRWZ0CQ1'}
+                = image_tag 'amazon-logo.png', :class => 'img-responsive'
+          .col-md-4
+            .thumbnail-container
+              %a.thumbnail{:href => 'https://www.restorationhardware.com/gift-registry/gift-list.jsp?giftlistId=gl874828204'}
+                = image_tag 'restoration-hardware-logo.png', :class => 'img-responsive'
 .container
   #about-us.row
-    %h2.text-center ABOUT US
+    %h2.text-center ABOUT
     .col-md-10.col-centered
       .row
         .col-md-6.divider.padded
